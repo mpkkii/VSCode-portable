@@ -1,0 +1,21 @@
+{
+	"python.interpreterPath": "${env:WINPYDIR}\\\\python.exe",
+    "python.venvPath": "${env:WINPYDIR}\\${workspacefolder}/.venv",
+
+    "terminal.integrated.profiles.windows": {
+        "Cmder": {
+          "path": "${env:windir}\\System32\\cmd.exe",
+          "args": ["/k", "${env:WINPYDIRBASE}\\t\\cmder\\vendor\\init.bat"]
+        },
+        "GIT": {
+          "path": "${env:WINPYDIRBASE}\\t\\cmder\\vendor\\git-for-windows\\git-cmd.exe",
+        }
+      },
+      "terminal.integrated.defaultProfile.windows": "Cmder",
+    
+    "git.enabled": true,
+
+    "git.path": "${env:WINPYDIRBASE}\\t\\cmder\\vendor\\git-for-windows\\cmd\\git.exe",
+    "workbench.startupEditor": "none",
+ 
+}
