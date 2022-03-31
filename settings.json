@@ -1,0 +1,37 @@
+{
+	  "python.interpreterPath": "${env:WINPYDIR}\\\\python.exe",
+    "python.venvPath": "${workspacefolder}/.venv",
+	"python.venvFolders": [
+      ".venv",
+      "${workspacefolder}/.venv"
+  ],
+
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
+    "telemetry.telemetryLevel": "off",
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": true,
+    "workbench.colorTheme": "ALT Pycharm dracula dark modified",
+    "window.zoomLevel": -1,
+    "terminal.integrated.profiles.windows": {
+        "Cmder": {
+          "path": "${env:windir}\\System32\\cmd.exe",
+          "args": ["/k", "${env:WINPYDIRBASE}\\t\\cmder\\vendor\\init.bat"]
+        },
+        "GIT": {
+          "path": "${env:WINPYDIRBASE}\\t\\cmder\\vendor\\git-for-windows\\git-cmd.exe",
+        }
+      },
+      "terminal.integrated.defaultProfile.windows": "Cmder",
+    
+    
+      // Is git enabled
+    "git.enabled": true,
+
+    // Path to the git executable
+    "git.path": "${env:WINPYDIRBASE}\\t\\cmder\\vendor\\git-for-windows\\cmd\\git.exe",
+    "workbench.startupEditor": "none",
+ 
+}
